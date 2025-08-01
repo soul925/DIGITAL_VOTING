@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    body {
+        background: url("https://www.shutterstock.com/image-vector/vote-india-vector-poster-hand-260nw-2447992445.jpg") 
+                    no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* dim effect for readability */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+</style>
+
+<div class="overlay">
+    <h1>Welcome to the Digital Voting System</h1>
+    <p class="lead">Cast your vote securely and view results in real time.</p>
+    <a href="register" class="btn btn-success btn-lg mt-3">Register</a><br>
+    <a href="login" class="btn btn-primary btn-lg mt-3">Login</a>
+</div>
+{% endblock %}
